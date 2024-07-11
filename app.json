@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "firebase-app-pablo",
-    "slug": "firebase-app-pablo",
+    "slug": "firebase2",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,10 +18,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.jeanfranco02.firebase2"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "8873d4e0-bbbf-4a04-b440-6b3ee9ac3b56"
+      }
+    },
+    "owner": "jeanfranco02"
   }
 }
