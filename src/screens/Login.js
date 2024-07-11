@@ -21,12 +21,14 @@ const Login = ({ navigation }) => {
             signInWithEmailAndPassword(auth, correo, contra)
                 .then((userCredential) => {
                     const user = userCredential.user;
+                    goToHome();
                 })
                 .catch((error) => {
                     const errorCode = error.code;
                     const errorMessage = error.message;
                     console.log(error.message);
                     console.log(error.code);
+                    alert("Credenciales incorrectas");
                     // ..
                 });
         
@@ -43,7 +45,7 @@ const Login = ({ navigation }) => {
 
     return (
         <KeyboardAvoidingView style={styles.container}>
-            <Text style={styles.title}>Inico de Sesión</Text>
+            <Text style={styles.title}>Inicio de Sesión</Text>
             <Text style={styles.title}>Ingrese sus credenciales</Text>
             <TextInput
                 placeholder='Correo'
